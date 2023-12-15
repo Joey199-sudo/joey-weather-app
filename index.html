@@ -11,7 +11,42 @@
       <img src="./img/logo.PNG" width="100" height="80" alt="logo" />
     </div>
     <div class="container">
-      <img class="bgImg" src="./img/weatherImg.jpg" alt="background image " />
+      <form class="searchForm" id="form" action="" method="post">
+        <input
+          class="form"
+          id="search"
+          type="text"
+          name="city"
+          placeholder="Enter a city near you"
+        />
+        <input type="submit" value="submit" id="btnSearch" />
+      </form>
+      <div class="current">
+        <h1>Pretoria</h1>
+        <small>current</small>
+        <div class="temp">
+          <span id="temp">25</span><sup>&deg; | &deg;F</sup>
+        </div>
+        <small id="des">Showers and thundershowers</small>
+      </div>
+      <div class="condition">
+        <div class="condition-heading">
+          <span class="day">Today</span>'s weather condition
+        </div>
+        <div class="condition-body">
+          <ul class="condition-list">
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>

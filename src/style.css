@@ -2,8 +2,19 @@
   margin: 0 auto;
   padding-left: 40px;
 }
-.container .bgImg {
+.container {
+  background-image: url("../img/weatherImg.jpg");
   width: 100%;
-  height: 50%;
+  height: 70%;
   opacity: 0.6;
+}
+
+.form {
+  width: 50%;
+  height: 35px;
+  color: black;
+  background-color: transparent;
+  border-top: 2px solid white;
+  border-left: 0px;
+  border-right: 0;
 }
