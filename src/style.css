@@ -1,5 +1,3 @@
-body {
-  background-image: url("./img/weatherImg.jpg");
-  background-repeat: no-repeat;
-  background-color: aqua;
+.logo {
+  margin: 0 auto;
 }
