@@ -57,14 +57,14 @@ sup {
 }
 
 .col {
-  display: block;
-  margin-left: 350px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  position: relative;
+  top: -10px;
+  left: 20px;
+
   background-color: rgb(223, 164, 14);
   padding: 10px;
   border-radius: 10px;
-  max-width: auto;
+  max-width: 500px;
 }
 .condition-heading {
   font-size: 20px;
