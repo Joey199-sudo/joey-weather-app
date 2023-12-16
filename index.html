@@ -38,7 +38,10 @@
         <div class="temp">
           <span id="temp">25</span><sup>&deg; C | &deg;F</sup>
         </div>
-        <small id="des">⛈️Showers and thundershowers</small>
+        
+        <span class="icon"><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" class="weather-icon"></span><small id="des">Showers and thundershowers</small>
+        <br>
+        <br>
         <p class="currentTime">Saturday 16 Dec , 14:41</p>
       </div>
       <div class="col">
@@ -49,33 +52,27 @@
           <div class="condition-body">
             <ul class="condition-list">
               <li class="list-group-item">
-                Humidity <span class="pullright">45%</span>
+                Humidity
+                <span class="pullright"><span id="humidity">9</span>%</span>
               </li>
 
               <li class="list-group-item">
-                Min Temprature <span class="pullright">16&deg;</span>
+                Temperature
+                <span class="pullright"><span id="curTemp">12</span>&deg;C</span>
               </li>
               <li class="list-group-item">
-                Max Temperature <span class="pullright">30&deg;</span>
+                Feels like
+                <span class="pullright"><span id="feels_like">30</span>&deg;C
               </li>
               <li class="list-group-item">
                 Weather Condition
-                <span class="pullright">Showers and thundershowers</span>
+                <span class="pullright"
+                  ><span id="weather_condi">cloudy</span></span
+                >
               </li>
+
               <li class="list-group-item">
-                wind direction <span class="pullright">NNW</span>
-              </li>
-              <li class="list-group-item">
-                Wind speed <span class="pullright">9km/h</span>
-              </li>
-              <li class="list-group-item">
-                Rain Amount <span class="pullright">5mm</span>
-              </li>
-              <li class="list-group-item">
-                Rain probability <span class="pullright">60%</span>
-              </li>
-              <li class="list-group-item">
-                Sunrise / Sunset <span class="pullright">05:10 / 18:56</span>
+                Wind speed <span class="pullright"><span id="wind_speed">10</span>km/h
               </li>
             </ul>
           </div>

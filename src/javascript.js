@@ -17,6 +17,23 @@ function showDetails(response) {
   let currentTemp = document.querySelector("#temp");
   let currentTemp2 = Math.round(response.data.temperature.current);
   currentTemp.innerHTML = currentTemp2;
+
+  let hum = document.querySelector("#humidity");
+  let curTemp = document.querySelector("#curTemp");
+  let feels_like = document.querySelector("#feels_like");
+  let condition = document.querySelector("#weather_condi");
+  let wind_speed = document.querySelector("#wind_speed");
+  let smal = document.querySelector("#des");
+
+  let icon = document.querySelector(".icon");
+  icon.innerHTML = `<img src=${response.data.condition.icon_url} class="weather-icon">`;
+
+  smal.innerHTML = response.data.condition.description;
+  hum.innerHTML = response.data.temperature.humidity;
+  curTemp.innerHTML = currentTemp2;
+  feels_like.innerHTML = response.data.temperature.feels_like;
+  condition.innerHTML = response.data.condition.description;
+  wind_speed.innerHTML = Math.roound(response.data.wind.speed);
 }
 
 let form = document.querySelector(".searchForm");
