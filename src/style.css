@@ -2,23 +2,22 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 .logo {
-  margin: 0 auto;
-  padding-left: 40px;
+  margin: 45px auto;
+  position: relative;
+  left: 250px;
+  top: -35px;
 }
 .containers {
   background-image: url("../img/pexels-magda-ehlers-1768538.jpg");
-  background-position: center; /* Center the background image */
+  background-position: center;
   background-size: cover;
-  display: block;
-  margin: 10px auto;
-  width: 70%;
-  height: 550px;
-  opacity: 0.7;
-  padding: 20px;
-  padding-right: 100px;
-  margin: 5px;
+  max-width: 900px;
+  margin: -80px auto;
   color: #fb774f;
-  max-width: 1200px;
+  opacity: 10;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 15px;
 }
 .form {
   width: 60%;
@@ -33,7 +32,7 @@ body {
   border-radius: 10px;
 }
 form ::placeholder {
-  color: #352f44;
+  color: #fb774f;
   font-size: 20px;
 }
 #btnSearch {
@@ -78,7 +77,7 @@ sup {
 .col {
   position: relative;
   top: -300px;
-  left: 100px;
+  left: 145px;
   max-width: 500px;
   margin: auto;
   background-color: rgba(128, 128, 128, 0.3);
@@ -90,7 +89,7 @@ sup {
 
 .condition-heading {
   font-size: 20px;
-  border-bottom: 1px solid grey;
+
   padding-bottom: 5px;
   font-weight: bolder;
 }
@@ -122,9 +121,14 @@ li::after {
 }
 
 footer {
-  color: #352f44;
-  font-size: 10px;
+  border-top: 1px solid #f9f7fe;
+  padding: 10px 0 0 0;
   text-align: center;
+  font-size: 18px;
+  color: #fb774f;
+
+  max-width: 900px;
+  margin: 5px auto;
 }
 
 @media (max-width: 768px) {
