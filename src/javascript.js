@@ -31,7 +31,7 @@ function showDetails(response) {
   smal.innerHTML = response.data.condition.description;
   hum.innerHTML = response.data.temperature.humidity;
   curTemp.innerHTML = currentTemp2;
-  feels_like.innerHTML = response.data.temperature.feels_like;
+  feels_like.innerHTML = Math.roound(response.data.temperature.feels_like);
   condition.innerHTML = response.data.condition.description;
   wind_speed.innerHTML = Math.roound(response.data.wind.speed);
 }
@@ -42,6 +42,7 @@ form.addEventListener("submit", search);
 //function for current time n date
 
 function currentDate(date) {
+  let dat = date.getDate();
   let day = date.getDay();
   let hours = date.getHours();
   let minutes = date.getMinutes();
@@ -75,7 +76,7 @@ function currentDate(date) {
   ];
 
   let currentMonth = months[month];
-  return `${dayss} ${day} ${currentMonth} ${year}  ${hours}:${minutes}`;
+  return `${dayss} ${dat} ${currentMonth}  ${year}  ${hours}:${minutes}`;
 }
 
 let showDate = document.querySelector(".currentTime");
